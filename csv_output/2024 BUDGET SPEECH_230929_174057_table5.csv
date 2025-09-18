@@ -1,0 +1,10 @@
+Amount range (K),"Proposed
+Levy (K)"
+Between 1 to 150,0.08
+Above 150 to 300,0.1
+Above 300 to 500,0.2
+"Above 500 to 1,000",0.5
+"Above 1,000 to 3,000",0.8
+"Above 3,000 to 5,000",1
+"Above 5,000 to 10,000",1.5
+"Above 10,000",1.8
