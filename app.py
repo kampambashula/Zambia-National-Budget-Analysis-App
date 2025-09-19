@@ -6,7 +6,7 @@ st.set_page_config(page_title="Zambia Budget Analysis - BudgetPulse Zambia", lay
 # --- Cover Image / Banner ---
 st.image(
     "https://img.freepik.com/free-vector/financial-data-analytics-banner-template_1017-31728.jpg",
-    use_column_width=True,
+    use_container_width=True,
     caption="Zambia National Budget 2026 - Analysis Dashboard"
 )
 
