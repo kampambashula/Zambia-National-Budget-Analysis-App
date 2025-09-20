@@ -193,14 +193,4 @@ fig = px.line(
 )
 st.plotly_chart(fig, use_container_width=True)
 
-# ----------------------
-# RAW DATA DOWNLOAD
-# ----------------------
-st.subheader("Combined Dataset")
-st.dataframe(df, use_container_width=True)
-st.download_button(
-    "Download Combined Dataset",
-    df.to_csv(index=False).encode("utf-8"),
-    file_name="combined_revenue_expenditure.csv",
-    mime="text/csv"
-)
+

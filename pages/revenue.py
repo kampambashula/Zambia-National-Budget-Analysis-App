@@ -24,8 +24,6 @@ def load_data():
 
 df = load_data()
 
-st.write("### Available Columns")
-st.write(list(df.columns))
 
 # ----------------------
 # COMPUTE POLICY RATIOS

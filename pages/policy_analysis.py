@@ -161,14 +161,4 @@ st.write(f"- % of deficit funded by Grants: **{latest['% Grants']:.2f}%**")
 st.write(f"- % of deficit funded by Domestic Borrowing: **{latest['% Domestic Borrowing']:.2f}%**")
 st.write(f"- % of deficit funded by Foreign Borrowing: **{latest['% Foreign Borrowing']:.2f}%**")
 
-# ----------------------
-# RAW DATA DOWNLOAD
-# ----------------------
-st.subheader("Combined Dataset for Policy Analysis")
-st.dataframe(df, use_container_width=True)
-st.download_button(
-    "Download Dataset",
-    df.to_csv(index=False).encode("utf-8"),
-    file_name="policy_analysis_combined.csv",
-    mime="text/csv"
-)
+
