@@ -6,81 +6,42 @@
 
 ---
 
-## Overview
-
-This app provides a **comprehensive analysis of Zambia’s national budget**, allowing policymakers, analysts, and researchers to explore trends in revenue, expenditure, deficit, and funding composition over time. The app is modular, with separate pages for revenue, expenditure, combined analysis, and policy analysis.  
-
-Key insights include:  
-
-- Revenue trends by category (tax, non-tax, grants, and financing)  
-- Expenditure trends by major sectors (health, education, defense, social protection, etc.)  
-- Fiscal deficit calculations (absolute and as a share of total revenue)  
-- Budget constraint visualization showing the relationship between expenditure, domestic revenue, and deficit funding  
-- Administration-specific analysis (MMD 2007–2011, PF 2011–2021, UPND 2021–Present)  
-
----
-
-## Data Sources
-
-1. **Revenue CSV** (`REVENUE.csv`)  
-   - Columns: Domestic Revenue, Tax Revenue, Non-Tax Revenue, Grants, Domestic Financing, Foreign Financing, and subcategories (Income Tax, VAT, Company Tax, Mineral Royalties, etc.)  
-   - Years: 2007–2025  
-
-2. **Expenditure CSV** (`EXPENDITURE.csv`)  
-   - Columns: Major and subcategories of expenditure (General Public Services, Health, Education, Defense, Roads, Farmer Input Support, Strategic Reserves, Debt Service, etc.)  
-   - Total Expenditure column included  
-   - Years: 2007–2025  
+**BudgetPulse Zambia** is an interactive Streamlit dashboard designed to provide insights into Zambia’s national budget, macroeconomic trends, money supply, and commodity markets. The platform allows policymakers, researchers, and analysts to visualize historical data and understand fiscal dynamics to inform decision-making.
 
 ---
 
 ## Features
 
-### 1. Revenue Analysis Page
+### 📊 Macroeconomic Fundamentals
 
-- Trends of Domestic Revenue, Tax Revenue, Non-Tax Revenue  
-- Breakdown of tax revenue components (PAYE, Company Tax, VAT, Customs, Excise)  
-- Breakdown of non-tax revenue components (Mineral Royalties, Fees, Levies)  
-- Grants and financing trends (Domestic, Foreign, Programme & Project Grants)  
-- Policy ratios:
-  - Tax / Total Revenue (%)  
-  - Mineral Royalties / Total Revenue (%)  
-  - Grants / Total Revenue (%)  
-  - Domestic vs Foreign Financing (%)  
+- Visualize **GDP growth**, **inflation**, and **debt stock** over time.
+- Plot fiscal indicators including deficits and debt-to-GDP ratios.
+- Interactive line charts with commentary to aid interpretation.
 
----
+### 💰 Money & Commodities
 
-### 2. Expenditure Analysis Page
+- Track **narrow money**, **broad money (M2, M3)** trends and their economic implications.
+- Monitor commodity prices such as **copper**, **cobalt**, **crude oil**, and **maize**.
+- Separate plots for each commodity for detailed analysis.
 
-- Trends of Total Expenditure and major sectors over time  
-- Sector breakdown charts (stacked charts for major and subcategories)  
-- Administration-level insights (MMD, PF, UPND)  
-- Spike detection to highlight sudden changes in expenditure  
+### 📈 Phillips Curve
 
----
+- Explore the relationship between **unemployment** and **inflation** in Zambia.
 
-### 3. Combined Revenue & Expenditure Analysis Page
+- Visualize trends that indicate inflation expectations and labor market pressures.
+- Policy-relevant insights for macroeconomic stabilization.
 
-- Revenue vs Expenditure vs Fiscal Deficit line chart  
-- Fiscal Deficit (absolute and as % of Domestic Revenue)  
-- Administration markers for easy comparison of government priorities  
-- Stacked composition charts showing revenue sources funding the deficit  
+### 📊 GDP Analysis
 
----
+- Examine **GDP trends over time**.
+- Assess the impact of population growth, labor participation, and sectoral performance.
 
-### 4. Policy Analysis Page
+### 🔎 Correlation Heat Maps
 
-- **Government Budget Constraint:** Visualizes how Total Expenditure is funded by Domestic Revenue, Grants, Domestic Borrowing, and Foreign Borrowing  
-- Highlights gaps where expenditure exceeds funding  
-- Fiscal deficit funding composition (%)  
-- Quick policy insights for latest budget year  
-- Data download for further analysis  
+- Identify relationships between key variables such as **money supply**, **debt stock**, **exchange rates**, and **inflation**.
+- Helps detect fiscal vulnerabilities and areas requiring policy attention.
 
 ---
+---
 
-## Installation & Setup
 
-1. **Clone the repository**:
-
-```bash
-git clone <repository-url>
-cd budget_app
