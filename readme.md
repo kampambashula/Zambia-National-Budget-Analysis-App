@@ -1,5 +1,7 @@
 # Zambia Budget Analysis App
 
+![alt text](images/zaba.png)
+
 **Author:** Kampamba Shula  
 **Platform:** Python + Streamlit + Plotly  
 **Purpose:** Analyze and visualize Zambia’s budget (2007–2025), including revenue, expenditure, fiscal deficit, and government budget constraints.  
